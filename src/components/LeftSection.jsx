@@ -22,18 +22,18 @@ const LeftSection = () => {
   return (
     <div className="flex flex-col h-full">
       {/* Tab Headers */}
-      <div className="flex border-b">
+      <div className="flex border-b flex-col sm:flex-row">
         {tabs.map((tab) => (
           <div
             key={tab.key}
             onClick={() => setActiveTab(tab.key)}
-            className={`flex-1 flex items-center justify-center cursor-pointer py-4 text-base font-semibold transition
-              ${
-                activeTab === tab.key
-                  ? "text-blue-600 border-b-2 border-blue-600 bg-blue-50"
-                  : "text-gray-600 hover:text-blue-500 hover:bg-gray-50"
-              }
-            `}
+            className={`flex-1 flex items-center justify-center cursor-pointer py-3 sm:py-4 text-sm sm:text-base font-semibold transition
+        ${
+          activeTab === tab.key
+            ? "text-blue-600 border-b-2 border-blue-600 bg-blue-50"
+            : "text-gray-600 hover:text-blue-500 hover:bg-gray-50"
+        }
+      `}
             style={{ userSelect: "none" }}
           >
             {tab.icon}

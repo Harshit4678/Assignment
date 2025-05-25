@@ -80,9 +80,7 @@ const ChatList = ({ selectedChatId, setSelectedChatId }) => {
                 {chat.lastMessage}
               </div>
             </div>
-            <div className="text-xs text-gray-400 ml-1 sm:ml-2 whitespace-nowrap">
-              {chat.time}
-            </div>
+            <div className="text-xs text-gray-400 ml-1 sm:ml-2 whitespace-nowrap">{chat.time}</div>
           </div>
         ))}
       </div>

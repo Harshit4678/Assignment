@@ -9,24 +9,24 @@ const ContentLayout = () => {
   const selectedChat = chatData.find((chat) => chat.id === selectedChatId);
 
   return (
-    <div className="flex flex-col md:flex-row h-[calc(100vh-4rem)] w-full overflow-hidden bg-gray-50">
-      {/* Chat List (left on desktop, top on mobile) */}
-      <div className="w-full md:w-72 min-w-0 max-w-xs border-b md:border-b-0 md:border-r bg-white flex flex-col">
-        <ChatList
-          selectedChatId={selectedChatId}
-          setSelectedChatId={setSelectedChatId}
-        />
-      </div>
-      {/* Chat Window (center, flexible) */}
-      <div className="flex-1 bg-gray-50 min-w-0">
-        <ChatWindow chat={selectedChat} />
-      </div>
-      {/* LeftSection (right on desktop, bottom on mobile) */}
-      <div className="w-full md:w-80 min-w-0 max-w-sm border-t md:border-t-0 md:border-l bg-white flex flex-col">
-        <LeftSection />
-      </div>
+  <div className="flex flex-col md:flex-row h-[calc(100vh-4rem)] w-full overflow-hidden bg-gray-50">
+    {/* Chat List (left on desktop, top on mobile) */}
+    <div className="w-full md:w-72 min-w-0 max-w-xs border-b md:border-b-0 md:border-r bg-white flex flex-col h-60 md:h-auto">
+      <ChatList
+        selectedChatId={selectedChatId}
+        setSelectedChatId={setSelectedChatId}
+      />
     </div>
-  );
+    {/* Chat Window (center, flexible) */}
+    <div className="flex-1 bg-gray-50 min-w-0 h-[calc(100vh-28rem)] md:h-auto">
+      <ChatWindow chat={selectedChat} />
+    </div>
+    {/* LeftSection (right on desktop, bottom on mobile) */}
+    <div className="w-full md:w-80 min-w-0 max-w-sm border-t md:border-t-0 md:border-l bg-white flex flex-col h-80 md:h-auto">
+      <LeftSection />
+    </div>
+  </div>
+);
 };
 
 export default ContentLayout;
