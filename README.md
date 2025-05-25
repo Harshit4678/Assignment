@@ -2,7 +2,8 @@
 
 A professional, responsive admin dashboard built with React and Tailwind CSS, inspired by Intercom's UI. This dashboard is designed for customer support admins to manage chats, view customer details, and use AI-powered assistance.
 
----
+---Deployed on Vercel 
+LINK :   https://assignment-liard-eta.vercel.app
 
 ## 🚀 Features
 
