@@ -59,7 +59,7 @@ export const chatMessages = {
     },
     {
       sender: "admin",
-      text: "Sure, John! Can you share your order ID?",
+      text: "Sure, Ranveer ! Can you share your order ID?",
       time: "09:15",
     },
     {
@@ -76,7 +76,7 @@ export const chatMessages = {
   2: [
     {
       sender: "customer",
-      text: "Can you update my shipping address?",
+      text: "Can you update my shipping Address?",
       time: "08:48",
     },
     {
@@ -103,7 +103,7 @@ export const chatMessages = {
     },
     {
       sender: "admin",
-      text: "Sorry to hear that, Michael. Can you try another payment method?",
+      text: "Sorry to hear that, Jamanth. Can you try another payment method?",
       time: "Yesterday",
     },
   ],
